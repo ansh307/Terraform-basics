@@ -1,0 +1,78 @@
+# Local Terraform directories
+.terraform/
+
+# Local Terraform state files
+# These can contain sensitive information and should not be committed.
+# Use a remote backend for state management in collaborative environments.
+*.tfstate
+*.tfstate.*.backup
+*.tfstate*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Terraform Cloud/Enterprise credentials
+.terraformrc
+terraform.rc
+
+# Terraform variable files
+# It's a best practice to ignore all .tfvars files and manage sensitive
+# variables through environment variables or a secure secrets manager.
+# If you have non-sensitive default variables in a specific .tfvars file
+# (e.g., terraform.tfvars with only non-sensitive defaults), you can
+# explicitly un-ignore it by adding !terraform.tfvars after this block.
+*.tfvars
+*.tfvars.json
+
+# Override files
+# These are often used for local testing or temporary changes.
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+.terraform.lock*
+
+# Sensitive file patterns
+# Add any other patterns for files containing secrets or keys.
+*.pem
+*.key
+*.keypair
+*.private
+*.secret
+*.secrets
+*secret*.tfvars
+*access_key*
+*secret_key*
+*password*
+*token*
+dovekey*
+dovekey1*
+
+# Specific private key files (like the one in your context)
+dovekey.txt
+
+# Infracost JSON output
+# Usually contains cost estimates and resource details.
+.infracost/
+infracost-reports/
+*.infracost.json
+
+# Terragrunt cache
+.terragrunt-cache/
+
+# Operating System generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+*.swp
+*~
